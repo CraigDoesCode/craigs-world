@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <h1>Craig's World</h1>
+      <h1>Cramming - Music for the Masses</h1>
       <div className="card">
         <button onClick={() => generateInsult()}>
           Insult Yourself
