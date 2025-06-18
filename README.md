@@ -1,4 +1,16 @@
-# React + TypeScript + Vite
+# Cramming - Music for the Masses
+This project is to explore using api's in a react app, clear and clean data flow, and a simple, minimalistic approach to a music app.
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
