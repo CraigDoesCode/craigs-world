@@ -18,7 +18,7 @@ function App() {
           Insult Yourself
         </button>
         <p>
-          My site's (soon to be spotify project) is not ready yet, so in the mean time you can click this button to generate an insult.
+          My site (soon to be spotify project) is not ready yet, so in the mean time you can click this button to generate an insult.
         </p>
       </div>
       <p className="read-the-docs">
