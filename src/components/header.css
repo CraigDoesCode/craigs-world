@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Roboto Mono';
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 85px;
+    height: 85px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#slogan {
+  color: gray;
+}
+
+@media (max-width: 768px) {
+ #slogan {
+  display: none;
+ }
+ header {
+  justify-content: center;
+ }
+}

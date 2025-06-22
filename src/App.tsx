@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-
+import Header from './components/header'
 function App() {
   const [insult, setInsult] = useState("")
 
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <h1>Cramming - Music for the Masses</h1>
+      <Header />
       <div className="card">
         <button onClick={() => generateInsult()}>
           Insult Yourself
