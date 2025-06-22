@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import '../assets/css/fonts.css';
 
 header {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     font-family: 'Roboto Mono';
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    width: 100;
 }
 
 #logo {

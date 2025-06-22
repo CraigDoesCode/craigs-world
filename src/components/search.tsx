@@ -1,7 +1,9 @@
+import './search.css';
+
 export default function Search() {
   return (
-    <div>
-      <input type="text" placeholder="Search" />
+    <div id="search">
+      <input id="search-input" type="text" placeholder="Search" />
     </div>
   );
 }

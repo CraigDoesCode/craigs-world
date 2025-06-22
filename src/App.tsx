@@ -29,11 +29,11 @@ function App() {
       </div>
       {!isPreview && (
         <div className="card">
-          <button onClick={() => generateInsult()}>Insult Yourself</button>
           <p>
-            My site (soon to be spotify project) is not ready yet, so in the
+            My site (soon to be spotify project) is not ready yet, <br />so in the
             mean time you can click this button to generate an insult.
           </p>
+          <button onClick={() => generateInsult()}>Insult Yourself</button>
         </div>
       )}
       <p className="read-the-docs">{insult}</p>

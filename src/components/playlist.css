@@ -1,0 +1,9 @@
+#playlist {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+ #playlist {
+  width: 100%;
+ }
+}

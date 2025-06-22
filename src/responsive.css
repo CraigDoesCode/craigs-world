@@ -1,0 +1,42 @@
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Root and body styles */
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
+  :root {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* App root styles */
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Main content styles */
+  .main {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Header styles */
+  header {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Hide slogan on mobile */
+  #slogan {
+    display: none;
+  }
+}
