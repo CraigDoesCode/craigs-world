@@ -23,10 +23,10 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   /* place-items: center; */
-  min-width: 320px;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -64,5 +64,16 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  :root {
+    width: 100%;
+    margin: 0;
   }
 }
