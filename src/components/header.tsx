@@ -8,7 +8,7 @@ export default function Header() {
               <h2>CRAMMING</h2>
             </div>
 
-            <h2 id="slogan">Music for the Masses</h2>
+            <h2 id="slogan">Music is All we Got</h2>
         </header>
     )
 }
