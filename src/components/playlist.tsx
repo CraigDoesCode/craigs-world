@@ -1,5 +1,4 @@
 import './playlist.css';
-import { useState } from 'react';
 import PlaylistItems from './playlist-items';
 import { Playlist } from '../types';
 

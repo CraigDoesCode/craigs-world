@@ -3,13 +3,8 @@ import './App.css'
 import Header from './components/header'
 import PlaylistEditor from './components/playlist'
 import Search from './components/search'
-import { Playlist, PlaylistItem, SearchItem } from './types'
+import { Playlist, SearchItem } from './types'
 
-const results = [
-  {trackName: "Jackie Onasis", artistName: "Sammie Rae & Friends"},
-  {trackName: "Superstition", artistName: "Stevie Wonder"},
-  {trackName: "I'm Yours", artistName: "Jason Mraz"}
-]
 
 function App() {
   const [insult, setInsult] = useState("")
