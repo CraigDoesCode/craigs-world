@@ -21,7 +21,7 @@ export default function Search() {
       <input id="search-input" type="text" placeholder="Search" />
       <div id="search-results">
         {searchResults && searchResults.map((result) => (
-          <SearchItem trackName={result.trackName} artistName={result.artistName} />
+          <SearchItem key={result.trackName} trackName={result.trackName} artistName={result.artistName} />
         ))}
       </div>
     </div>

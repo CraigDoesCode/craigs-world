@@ -3,9 +3,21 @@ import './App.css'
 import Header from './components/header'
 import Playlist from './components/playlist'
 import Search from './components/search'
+
+const playlistItems = [
+  {trackName: "Jackie Onasis", artistName: "Sammie Rae & Friends"},
+  {trackName: "Superstition", artistName: "Stevie Wonder"},
+]
+
+interface PlaylistItem {
+  trackName: string;
+  artistName: string;
+}
+
 function App() {
   const [insult, setInsult] = useState("")
   const [isPreview, setIsPreview] = useState(false)
+  const [playlist] = useState<PlaylistItem[]>(playlistItems)
 
   const generateInsult = async () => {
     const newInsult = "Don't be silly you're great! no instults here, check back in a couple of weeks to see the progress \n silly goose 🪿"
@@ -25,7 +37,7 @@ function App() {
       <Header />
       <div className="main">
         {isPreview && <Search />}
-        {isPreview && <Playlist />}
+        {isPreview && <Playlist playlistItems={playlist} />}
       </div>
       {!isPreview && (
         <div className="card">
