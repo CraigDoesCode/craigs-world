@@ -8,7 +8,7 @@ export default function PlaylistEditor({ playlist, setCurrentPlaylist }: { playl
     <div id="playlist">
       <h1>Playlist</h1>
       {playlist?.items && playlist.items.map((item) => (
-        <PlaylistItems key={item.trackName} trackName={item.trackName} artistName={item.artistName} />
+        <PlaylistItems key={item.trackName} trackName={item.trackName} artistName={item.artistName} playlist={playlist} setPlaylist={setCurrentPlaylist} />
       ))}
       <button>SAVE</button>
     </div>
