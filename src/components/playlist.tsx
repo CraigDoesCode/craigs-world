@@ -9,7 +9,6 @@ interface PlaylistItem {
 
 export default function Playlist({ playlistItems }: { playlistItems: PlaylistItem[] }) {
   const [playlist] = useState<PlaylistItem[]>(playlistItems);
-  console.log(typeof playlist);
   return (
     <div id="playlist">
       <h1>Playlist</h1>
