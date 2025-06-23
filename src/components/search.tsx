@@ -10,6 +10,7 @@ interface SearchItem {
 const response = [
   {trackName: "Jackie Onasis", artistName: "Sammie Rae & Friends"},
   {trackName: "Superstition", artistName: "Stevie Wonder"},
+  {trackName: "I'm Yours", artistName: "Jason Mraz"}
 ]
 export default function Search() {
   const [searchResults] = useState<SearchItem[]>(response);
