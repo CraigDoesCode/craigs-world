@@ -1,22 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/header'
-import Playlist from './components/playlist'
+import PlaylistEditor from './components/playlist'
 import Search from './components/search'
-
-const playlistItems = [
-  {trackName: "Jackie Onasis", artistName: "Sammie Rae & Friends"},
-  {trackName: "Superstition", artistName: "Stevie Wonder"},
-]
-
-interface PlaylistItem {
-  trackName: string;
-  artistName: string;
-}
-interface SearchItem {
-  trackName: string;
-  artistName: string;
-}
+import { Playlist, PlaylistItem, SearchItem } from './types'
 
 const results = [
   {trackName: "Jackie Onasis", artistName: "Sammie Rae & Friends"},
@@ -27,8 +14,8 @@ const results = [
 function App() {
   const [insult, setInsult] = useState("")
   const [isPreview, setIsPreview] = useState(false)
-  const [playlist] = useState<PlaylistItem[]>(playlistItems)
   const [searchResults, setSearchResults] = useState<SearchItem[]>([])
+  const [currentPlaylist, setCurrentPlaylist] = useState<Playlist>({name: "New Playlist", description: "New Playlist", items: []})
 
   const generateInsult = async () => {
     const newInsult = "Don't be silly you're great! no instults here, check back in a couple of weeks to see the progress \n silly goose 🪿"
@@ -47,8 +34,8 @@ function App() {
     <>
       <Header />
       <div className="main">
-        {isPreview && <Search searchResults={searchResults} setSearchResults={setSearchResults} />}
-        {isPreview && <Playlist playlistItems={playlist} />}
+        {isPreview && <Search searchResults={searchResults} setSearchResults={setSearchResults} currentPlaylist={currentPlaylist} setCurrentPlaylist={setCurrentPlaylist} />}
+        {isPreview && <PlaylistEditor playlist={currentPlaylist} setCurrentPlaylist={setCurrentPlaylist} />}
       </div>
       {!isPreview && (
         <div className="card">
