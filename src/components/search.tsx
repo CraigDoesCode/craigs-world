@@ -17,11 +17,15 @@ export default function Search({
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
+    if (query.length > 2) {
     const filteredResults = response.filter(result => 
       result.trackName.toLowerCase().includes(query.toLowerCase()) ||
       result.artistName.toLowerCase().includes(query.toLowerCase())
     );
     setSearchResults(filteredResults);
+    } else {
+      setSearchResults([]);
+    }
   }
 
   return (
